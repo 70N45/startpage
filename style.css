@@ -1,0 +1,69 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* World Clock */
+
+body {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+.footer {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  margin: 50px auto 0;
+}
+.world {
+  height: 705px;
+  margin: 50px auto 0;
+  position: relative;
+  width: 705px;
+}
+.world:before {
+  border-right: 0px dotted #3a3a3a;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 352px;
+  width: 1px;
+  position: absolute;
+  z-index: 100;
+  transform: rotate(45deg);
+}
+.world:after {
+  border-bottom: 1px dotted #3a3a3a;
+  content: "9am";
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: 351px;
+  width: 100%;
+  z-index: 100;
+  transform: rotate(45deg);
+}
+
+.clock {
+  background: url("https://imgs.xkcd.com/comics/now/12h00m.png");
+  border-radius: 50%;
+  display: block;
+  height: 705px;
+  position: relative;
+  width: 705px;
+}
+
+.map {
+  background: url("https://imgs.xkcd.com/comics/now/12h00m.png") center center;
+  border: 1px dotted #3a3a3a;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 592px;
+  left: 56px;
+  position: absolute;
+  top: 56px;
+  transform: rotate(0);
+  transition: transform 500ms linear;
+  width: 592px;
+}
